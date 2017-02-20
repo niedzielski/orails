@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  background: pink;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+
+  /* todo: move to js. this seems like the responsibility of the renderer */
+  image-rendering: pixelated;
+}
