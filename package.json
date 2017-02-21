@@ -1,0 +1,48 @@
+{
+  "name": "orails",
+  "version": "0.0.0",
+  "description": "o rails",
+  "keywords": [
+    "game",
+    "rail shooter",
+    "pixel",
+    "8-bit",
+    "2d"
+  ],
+  "homepage": "https://github.com/rndmem/orails",
+  "repository": "github:rndmem/orails",
+  "bugs": "https://github.com/rndmem/orails",
+  "main": "src/js",
+  "scripts": {
+    "watch": "live-server",
+    "test": "npm run -s lint",
+    "lint": "rndlint .",
+    "upgrade": "ncu -atu && jspm update",
+    "postinstall": "jspm i",
+    "preversion": "[ -z \"$(git status --porcelain)\" ] && npm -s test",
+    "postversion": "git push origin master --follow-tags && npm publish",
+    "clobber": "rm -rf node_modules jspm_packages .eslintcache"
+  },
+  "engines": {
+    "node": "7.5.0"
+  },
+  "devDependencies": {
+    "eslint": "3.12.2",
+    "eslint-config-rndmem": "4.0.1",
+    "eslint-plugin-jsdoc": "2.4.0",
+    "eslint-plugin-json": "1.2.0",
+    "eslint-plugin-node": "3.0.5",
+    "eslint-plugin-promise": "3.4.0",
+    "jspm": "0.17.0-beta.40",
+    "live-server": "1.2.0",
+    "npm-check-updates": "2.10.3",
+    "pre-commit": "1.2.2"
+  },
+  "jspm": {
+    "devDependencies": {
+      "plugin-babel": "npm:systemjs-plugin-babel@0.0.21"
+    }
+  },
+  "precommit.silent": true,
+  "license": "GPL-3.0"
+}
