@@ -28,7 +28,8 @@
   },
   "devDependencies": {
     "eslint": "3.12.2",
-    "eslint-config-rndmem": "4.0.1",
+    "eslint-config-rndmem": "6.0.0",
+    "eslint-plugin-eslint-comments": "1.0.0",
     "eslint-plugin-jsdoc": "2.4.0",
     "eslint-plugin-json": "1.2.0",
     "eslint-plugin-node": "3.0.5",
